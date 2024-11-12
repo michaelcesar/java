@@ -19,6 +19,6 @@ class Car {
     }
 
     public void run(){
-        System.out.println("Car is running");
+        System.out.println("The "+ this.model + " is running");
     }
 }

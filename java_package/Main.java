@@ -1,4 +1,4 @@
-
+package java_package;
 
 public class Main {
 
@@ -6,6 +6,10 @@ public class Main {
 
         Car myCar = new Car("Fusca");
         myCar.run();
+
+        String text = myCar.run();
+
+        System.out.println(text);
 
     }
 }
@@ -18,7 +22,9 @@ class Car {
         this.model = model;
     }
 
-    public void run(){
+    public String run(){
         System.out.println("The "+ this.model + " is running");
+
+        return "return";
     }
 }
